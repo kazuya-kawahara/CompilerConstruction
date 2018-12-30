@@ -53,13 +53,26 @@ class NFA[Q,A](
 
   def toDFA(): DFA[Set[Q],A] = {
     val q0DFA =eclosure(Set(q0))
+  
     var statesDFA = Set(q0DFA)
     var u = List(q0DFA)            // リストをスタックとして使用
     var transitionDFA = Map[(Set[Q], A), Set[Q]]()
 
-//    while (!u.isEmpty) {
-//       ...
-//     }
+    while (!u.isEmpty) {
+      val s = u.head
+      u = u.tail
+      var sig = alpha
+      while (!sig.isEmpty){
+        val sprime = eclosure(transSet(s, sig.head::Nil))
+        transitionDFA += ((s, sig.head)->sprime)
+        if (!statesDFA.contains(sprime)){
+          statesDFA += sprime
+          u = sprime::u
+        }
+        sig = sig.tail
+      }
+    }
+  
     val finalStatesDFA = statesDFA.filter(qs => !(qs & finalStates).isEmpty)
 
     new DFA(statesDFA, alpha, transitionDFA, q0DFA, finalStatesDFA)

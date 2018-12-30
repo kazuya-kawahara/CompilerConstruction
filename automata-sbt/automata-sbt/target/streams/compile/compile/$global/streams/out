@@ -1,0 +1,71 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:12:9: only traits and abstract classes can have declared but undefined members[0m
+[0m[[0m[31merror[0m] [0m[0m    val a,z,e:RegExp[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:12:11: only traits and abstract classes can have declared but undefined members[0m
+[0m[[0m[31merror[0m] [0m[0m    val a,z,e:RegExp[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:12:13: only traits and abstract classes can have declared but undefined members[0m
+[0m[[0m[31merror[0m] [0m[0m    val a,z,e:RegExp[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:13:9: only traits and abstract classes can have declared but undefined members[0m
+[0m[[0m[31merror[0m] [0m[0m    val q0,q1:Q[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:13:12: only traits and abstract classes can have declared but undefined members[0m
+[0m[[0m[31merror[0m] [0m[0m    val q0,q1:Q[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:14:9: only traits and abstract classes can have declared but undefined members[0m
+[0m[[0m[31merror[0m] [0m[0m    val r1,r2:RegExp[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:14:12: only traits and abstract classes can have declared but undefined members[0m
+[0m[[0m[31merror[0m] [0m[0m    val r1,r2:RegExp[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:19:13: not found: value NFA[0m
+[0m[[0m[31merror[0m] [0m[0m            NFA[Q,A]([0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:21:24: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : a.type (with underlying type RegExp.this.CharExp)[0m
+[0m[[0m[31merror[0m] [0m[0m required: A[0m
+[0m[[0m[31merror[0m] [0m[0m                Set[A](a),[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:22:55: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : ((Q, Some[RegExp.this.CharExp]), Q)[0m
+[0m[[0m[31merror[0m] [0m[0m required: ((Q, Option[A]), Set[Q])[0m
+[0m[[0m[31merror[0m] [0m[0m                Map[(Q,Option[A]),Set[Q]]((q0,Some(a))->q1),[0m
+[0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:26:16: not found: type EmptyExp[0m
+[0m[[0m[31merror[0m] [0m[0m        case z:EmptyExp =>[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:27:13: not found: value NFA[0m
+[0m[[0m[31merror[0m] [0m[0m            NFA[Q,A]([0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:34:16: not found: type EpsExp[0m
+[0m[[0m[31merror[0m] [0m[0m        case e:EpsExp =>[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:35:13: not found: value NFA[0m
+[0m[[0m[31merror[0m] [0m[0m            NFA[Q,A]([0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:42:61: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: Map[(Q, Option[A]),Set[Q]][0m
+[0m[[0m[31merror[0m] [0m[0m        def f(nfa:NFA[Q,A],q:Q):Map[(Q,Option[A]),Set[Q]] = {}[0m
+[0m[[0m[31merror[0m] [0m[0m                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:34:23: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: NFA[Q,A][0m
+[0m[[0m[31merror[0m] [0m[0m        case e:EpsExp =>[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:44:13: not found: value NFA[0m
+[0m[[0m[31merror[0m] [0m[0m            NFA[Q,A]([0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:52:13: not found: value NFA[0m
+[0m[[0m[31merror[0m] [0m[0m            NFA[Q,A]([0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:55:86: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : scala.collection.immutable.Map[(Q, Option[A]),Set[Q]][0m
+[0m[[0m[31merror[0m] [0m[0m required: ((Q, Option[A]), ?)[0m
+[0m[[0m[31merror[0m] [0m[0m                Map[(Q,Option[A]),Set[Q]]((q0,None)->Set[Q](nfa1.q0,nfa2.q0)) + nfa1.transition + nfa2.transition,[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\automata-sbt\automata-sbt\src\RegExp.scala:60:13: not found: value NFA[0m
+[0m[[0m[31merror[0m] [0m[0m            NFA[Q,A]([0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m20 errors found[0m

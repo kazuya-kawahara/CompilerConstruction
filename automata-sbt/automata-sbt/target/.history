@@ -11,3 +11,11 @@ console
 :wuit
 :quit
 exit
+test
+console
+scala
+test
+:quit
+exit
+console
+compile
