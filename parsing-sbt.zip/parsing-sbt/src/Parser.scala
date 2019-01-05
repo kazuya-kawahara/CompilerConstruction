@@ -41,11 +41,29 @@ class Parser (val src: Yylex) {
       case _ => error()
     }
 
-  def E(): Exp = T()  // プログラムを書く．補助関数も必要
+  def E(): Exp =
+    tok match {
+      case ID(_) | INT(_) | LPAREN | NIL => Eprime(T())
+      case _ => error()
+    }
 
-  def C(): Exp = E()  // プログラムを書く．補助関数も必要
+  def Eprime(e: Exp): Exp = 
+    tok match {
+      case PLUS => eat(PLUS); Eprime(BOpExp(PlusOp, e, T()))
+      case MINUS => eat(MINUS); Eprime(BOpExp(MinusOp, e, T()))
+      case TIMES | DIV | RPAREN | EOF | ELSE | EQEQ | LESS | COLONCOLON => e
+      case _ => error()
+    }
 
-  def B(): Exp = E()  // プログラムを書く．補助関数も必要
+  def C(): Exp =
+    tok match {
+      case ID(_) | INT(_) | LPAREN | NIL => 
+    }
+
+  def B(): Exp =
+    tok match {
+      
+    }
 
   def I(): Exp = C()  // プログラムを書く．
 }
