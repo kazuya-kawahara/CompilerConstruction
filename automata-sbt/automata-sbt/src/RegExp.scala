@@ -14,56 +14,62 @@ def RegExpToNFA[Q,A](r:RegExp):NFA[Q,A]={
     val r1,r2:RegExp
 
     r match { 
-        case a:CharExp => 
-            NFA[Q,A](
+        case a:CharExp => {
+            new NFA[Q,A](
                 Set[Q](q0,q1),
                 Set[A](a),
                 Map[(Q,Option[A]),Set[Q]]((q0,Some(a))->q1),
                 q0,
                 Set[Q](q1)
             )
-        case empty:EmptyExp =>
-            NFA[Q,A](
+        }
+        case empty:EmptyExp => {
+            new NFA[Q,A](
                 Set[Q](q0),
                 Set[A](),
                 Map[(Q,Option[A]),Set[Q]](),
                 q0,
                 Set[Q]()
             )
-        case eps:EpsExp =>
-            NFA[Q,A](
+        }
+        case eps:EpsExp => {
+            new NFA[Q,A](
                 Set[Q](q0),
                 Set[A](),
                 Map[(Q,Option[A]),Set[Q]](),
                 q0,
                 Set[Q](q0)
             )
-        case ConcatExp(r1,r2) =>
-            NFA[Q,A](
+        }
+        case ConcatExp(r1,r2) => {
+            val R1FinalToR2Q0:Map[(Q,Option[A]),Set[Q]] = r1.finalStates.map(Map[(Q,Option[A]),Set[Q]]((_,None)->Set[Q](RegExpToNFA(r2).q0)))
+            new NFA[Q,A](
                 RegExpToNFA(r1).states ++ RegExpToNFA(r2).states,
                 RegExpToNFA(r1).alpha ++ RegExpToNFA(r2).alpha,
-                //わからない部分 Map[(Q,Option[A]),Set[Q]]((q0,None)->Set[Q](RegExpToNFA(r1).q0,RegExpToNFA(r2).q0)) + RegExpToNFA(r1).transition + RegExpToNFA(r2).transition,
-                ,
+                RegExpToNFA(r1).transition ++ R1FinalToR2Q0 ++ RegExpToNFA(r2).transition,
                 RegExpToNFA(r1).q0,
                 RegExpToNFA(r2).finalStates
             )
-        case AltExp(r1,r2) =>
-            NFA[Q,A](
+        }
+        case AltExp(r1,r2) => {
+            new NFA[Q,A](
                 Set[Q](q0) ++ RegExpToNFA(r1).states ++ RegExpToNFA(r2).states,
                 RegExpToNFA(r1).alpha ++ RegExpToNFA(r2).alpha,
                 Map[(Q,Option[A]),Set[Q]]((q0,None)->Set[Q](RegExpToNFA(r1).q0,RegExpToNFA(r2).q0)) + RegExpToNFA(r1).transition + RegExpToNFA(r2).transition,
                 q0,
                 RegExpToNFA(r1).finalStates ++ RegExpToNFA(r2).finalStates
             )
-        case StarExp(r1) =>
-            NFA[Q,A](
+        }
+        case StarExp(r1) => {
+            val R1FinalToR1Q0:Map[(Q,Option[A]),Set[Q]] = r1.finalStates.map(Map[(Q,Option[A]),Set[Q]]((_,None)->Set[Q](RegExpToNFA(r1).q0)))
+            new NFA[Q,A](
                 Set[Q](q0) ++ RegExpToNFA(r1).states,
                 RegExpToNFA(r1).alpha,
-                //わからない部分 Map[(Q,Option[A]),Set[Q]]((q0,None)->RegExpToNFA(r1).q0) + RegExpToNFA(r1).transition,
-                ,
-                q0,
-                Set[Q](q0)
+                RegExpToNFA(r1).transition ++ R1FinalToR1Q0,
+                RegExpToNFA(r1).q0,
+                Set[Q](RegExpToNFA(r1).q0)
             )
+        }
     }
 }
 }
