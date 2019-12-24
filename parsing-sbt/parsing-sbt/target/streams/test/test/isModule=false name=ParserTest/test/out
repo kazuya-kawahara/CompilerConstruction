@@ -1,0 +1,70 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mParserTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m*[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should 左に強く結合[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mカッコ[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should 正しく結合[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m*と+[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should *の方が強く結合 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  VarExp(abc) did not equal BOpExp(PlusOp,VarExp(abc),BOpExp(TimesOp,IntExp(10),IntExp(20))) (Parser.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mカッコの中に*と+[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should  *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Base$.error(Base.scala:3)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.eat(Parser.scala:13)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.F(Parser.scala:24)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.T(Parser.scala:32)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.E(Parser.scala:44)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.C(Parser.scala:46)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.I(Parser.scala:50)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Main$.parseStr(Main.scala:5)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserTest.$anonfun$new$4(Parser.scala:26)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m::[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should 右に強く結合 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  IntExp(10) did not equal BOpExp(ConsOp,IntExp(10),BOpExp(ConsOp,IntExp(20),NilExp)) (Parser.scala:33)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m::と*[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should *の方が強く結合 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  IntExp(5) did not equal BOpExp(ConsOp,IntExp(5),BOpExp(ConsOp,BOpExp(TimesOp,IntExp(10),IntExp(20)),NilExp)) (Parser.scala:39)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mif文と==[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should  *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Base$.error(Base.scala:3)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.T(Parser.scala:33)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.E(Parser.scala:44)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.C(Parser.scala:46)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.I(Parser.scala:50)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Main$.parseStr(Main.scala:5)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserTest.$anonfun$new$7(Parser.scala:46)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mif文と<[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should  *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Base$.error(Base.scala:3)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.T(Parser.scala:33)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.E(Parser.scala:44)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.C(Parser.scala:46)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.I(Parser.scala:50)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Main$.parseStr(Main.scala:5)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserTest.$anonfun$new$8(Parser.scala:52)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mif文のネスト[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should  *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Base$.error(Base.scala:3)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.T(Parser.scala:33)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.E(Parser.scala:44)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.C(Parser.scala:46)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Parser.I(Parser.scala:50)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Main$.parseStr(Main.scala:5)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserTest.$anonfun$new$9(Parser.scala:58)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m

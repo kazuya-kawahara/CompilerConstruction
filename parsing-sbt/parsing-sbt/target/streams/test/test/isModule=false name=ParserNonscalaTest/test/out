@@ -1,0 +1,154 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mParserNonscalaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m*[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should 左に強く結合[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mカッコ[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should 正しく結合[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m*と+[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should *の方が強く結合 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  VarExp(abc) did not equal BOpExp(PlusOp,VarExp(abc),BOpExp(TimesOp,IntExp(10),IntExp(20))) (ParserNonscala.scala:43)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mカッコの中に*と+[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should  *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Base$.error(Base.scala:3)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.eat(ParserNonscala.scala:14)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.F(ParserNonscala.scala:26)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.T(ParserNonscala.scala:34)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.E(ParserNonscala.scala:47)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.C(ParserNonscala.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.I(ParserNonscala.scala:53)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.parseStr(ParserNonscala.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.$anonfun$new$4(ParserNonscala.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m::[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should 右に強く結合 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  IntExp(10) did not equal BOpExp(ConsOp,IntExp(10),BOpExp(ConsOp,IntExp(20),NilExp)) (ParserNonscala.scala:55)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m::と*[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should *の方が強く結合 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  IntExp(5) did not equal BOpExp(ConsOp,IntExp(5),BOpExp(ConsOp,BOpExp(TimesOp,IntExp(10),IntExp(20)),NilExp)) (ParserNonscala.scala:61)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mif文と==[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should  *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Base$.error(Base.scala:3)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.T(ParserNonscala.scala:35)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.E(ParserNonscala.scala:47)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.C(ParserNonscala.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.I(ParserNonscala.scala:53)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.parseStr(ParserNonscala.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.$anonfun$new$7(ParserNonscala.scala:68)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mif文と<[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should  *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Base$.error(Base.scala:3)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.T(ParserNonscala.scala:35)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.E(ParserNonscala.scala:47)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.C(ParserNonscala.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.I(ParserNonscala.scala:53)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.parseStr(ParserNonscala.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.$anonfun$new$8(ParserNonscala.scala:74)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mif文のネスト[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should  *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Base$.error(Base.scala:3)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.T(ParserNonscala.scala:35)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.E(ParserNonscala.scala:47)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.C(ParserNonscala.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.I(ParserNonscala.scala:53)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.parseStr(ParserNonscala.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.$anonfun$new$9(ParserNonscala.scala:80)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m関数適用[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should  *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Base$.error(Base.scala:3)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.Tprime(ParserNonscala.scala:44)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.T(ParserNonscala.scala:34)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.E(ParserNonscala.scala:47)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.C(ParserNonscala.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.I(ParserNonscala.scala:53)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.parseStr(ParserNonscala.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.$anonfun$new$10(ParserNonscala.scala:87)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32misEmpty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should  *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Base$.error(Base.scala:3)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.Tprime(ParserNonscala.scala:44)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.T(ParserNonscala.scala:34)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.E(ParserNonscala.scala:47)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.C(ParserNonscala.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.I(ParserNonscala.scala:53)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.parseStr(ParserNonscala.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.$anonfun$new$11(ParserNonscala.scala:92)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mhead[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should  *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Base$.error(Base.scala:3)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.Tprime(ParserNonscala.scala:44)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.T(ParserNonscala.scala:34)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.E(ParserNonscala.scala:47)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.C(ParserNonscala.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.I(ParserNonscala.scala:53)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.parseStr(ParserNonscala.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.$anonfun$new$12(ParserNonscala.scala:97)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mtail[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should  *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Base$.error(Base.scala:3)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.Tprime(ParserNonscala.scala:44)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.T(ParserNonscala.scala:34)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.E(ParserNonscala.scala:47)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.C(ParserNonscala.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.I(ParserNonscala.scala:53)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.parseStr(ParserNonscala.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.$anonfun$new$13(ParserNonscala.scala:102)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m関数定義[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should  *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Base$.error(Base.scala:3)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.D(ParserNonscala.scala:55)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.parseStrDef(ParserNonscala.scala:16)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.$anonfun$new$14(ParserNonscala.scala:108)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FlatSpecLike$$anon$1.apply(FlatSpecLike.scala:1682)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m例: insert[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should  *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at Base$.error(Base.scala:3)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscala.D(ParserNonscala.scala:55)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.parseFileDef(ParserNonscala.scala:23)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ParserNonscalaTest.$anonfun$new$15(ParserNonscala.scala:114)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FlatSpecLike$$anon$1.apply(FlatSpecLike.scala:1682)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
