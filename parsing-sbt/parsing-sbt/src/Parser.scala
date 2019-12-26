@@ -37,7 +37,7 @@ class Parser (val src: Yylex) {
     tok match {
       case TIMES => eat(TIMES); Tprime(BOpExp(TimesOp, e, F()))
       case DIV => eat(DIV); Tprime(BOpExp(DivideOp, e, F()))
-      case PLUS | MINUS| RPAREN | EOF | ELSE | EQEQ | LESS | COLONCOLON => e
+      case PLUS | MINUS | RPAREN | EOF | ELSE | EQEQ | LESS | COLONCOLON => e
       case _ => error()
     }
 
@@ -55,10 +55,34 @@ class Parser (val src: Yylex) {
       case _ => error()
     }
 
-  def C(): Exp = E()  // プログラムを書く．補助関数も必要
+  def C(): Exp =
+    tok match {
+      case ID(_) | INT(_) | LPAREN | NIL => Cprime(E())
+      case _ => error()
+    }
 
-  def B(): Exp = E()  // プログラムを書く．補助関数も必要
+  def Cprime(e: Exp): Exp =
+    tok match {
+      case COLONCOLON => eat(COLONCOLON); BOpExp(ConsOp, e, Cprime(E()))
+      case _ => e
+    }
 
-  def I(): Exp = C()  // プログラムを書く．
+  def B(): Exp =
+    tok match {
+      case ID(_) | INT(_) | LPAREN | NIL => Bprime(E())
+    }
+  
+  def Bprime(e: Exp) =
+    tok match {
+      case EQEQ => eat(EQEQ); BOpExp(EqOp, e, E())
+      case LESS => eat(LESS); BOpExp(LtOp, e, E())
+      case _ => error()
+    }
+
+  def I(): Exp =
+    tok match {
+      case IF => eat(IF); eat(LPAREN); B(); eat(RPAREN); I(); eat(ELSE); I()
+      case _ => C()
+    }
 }
 

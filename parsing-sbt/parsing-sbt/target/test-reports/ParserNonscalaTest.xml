@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuite hostname="Kazuya-PC" name="ParserNonscalaTest" tests="15" errors="0" failures="13" skipped="0" time="0.322" timestamp="2019-12-25T02:22:25">
+<testsuite hostname="Kazuya-PC" name="ParserNonscalaTest" tests="15" errors="0" failures="13" skipped="0" time="0.384" timestamp="2019-12-26T16:31:24">
                      <properties>
       <property name="jline.esc.timeout" value="0"/><property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/><property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_211\bin"/><property name="java.vm.version" value="25.211-b12"/><property name="java.vm.vendor" value="Oracle Corporation"/><property name="java.vendor.url" value="http://java.oracle.com/"/><property name="path.separator" value=";"/><property name="jna.loaded" value="true"/><property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/><property name="file.encoding.pkg" value="sun.io"/><property name="user.country" value="JP"/><property name="user.script" value=""/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="sun.os.patch.level" value=""/><property name="jna.nosys" value="true"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="user.dir" value="C:\Users\Owner\Documents\CompilerConstruction\parsing-sbt\parsing-sbt"/><property name="java.runtime.version" value="1.8.0_211-b12"/><property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/><property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_211\lib\endorsed"/><property name="os.arch" value="amd64"/><property name="java.io.tmpdir" value="C:\Users\Owner\AppData\Local\Temp\"/><property name="line.separator" value="
 "/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="log4j.ignoreTCL" value="true"/><property name="user.variant" value=""/><property name="os.name" value="Windows 10"/><property name="sun.jnu.encoding" value="MS932"/><property name="jnidispatch.path" value="C:\Users\Owner\AppData\Local\Temp\jna--1138315815\jna8088534359357819431.dll"/><property name="java.library.path" value="C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\scala\bin;C:\MinGW\bin;C:\Program Files\Git\cmd;C:\Windows\System32\OpenSSH;C:\texlive\2018\bin\win32;C:\Program Files\MATLAB\R2019b\bin;C:\Program Files\gnuplot\bin;C:\Program Files\Java\jre1.8.0_191\bin;C:\Program Files (x86)\scala\bin;C:\Program Files (x86)\sbt\bin;C:\Users\Owner\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Owner\AppData\Local\Microsoft\WindowsApps;;."/><property name="java.specification.name" value="Java Platform API Specification"/><property name="java.class.version" value="52.0"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="os.version" value="10.0"/><property name="swoval.tmpdir" value="C:\Users\Owner\.sbt\1.0"/><property name="user.home" value="C:\Users\Owner"/><property name="user.timezone" value="Asia/Tokyo"/><property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/><property name="file.encoding" value="MS932"/><property name="java.specification.version" value="1.8"/><property name="sbt.log.format" value="true"/><property name="java.class.path" value="C:\Program Files (x86)\sbt\bin\sbt-launch.jar"/><property name="user.name" value="kazuya"/><property name="jline.shutdownhook" value="false"/><property name="java.vm.specification.version" value="1.8"/><property name="sun.java.command" value="xsbt.boot.Boot"/><property name="java.home" value="C:\Program Files\Java\jre1.8.0_211"/><property name="sun.arch.data.model" value="64"/><property name="user.language" value="ja"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="awt.toolkit" value="sun.awt.windows.WToolkit"/><property name="java.vm.info" value="mixed mode"/><property name="java.version" value="1.8.0_211"/><property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_211\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/><property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_211\lib\resources.jar;C:\Program Files\Java\jre1.8.0_211\lib\rt.jar;C:\Program Files\Java\jre1.8.0_211\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_211\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_211\lib\jce.jar;C:\Program Files\Java\jre1.8.0_211\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_211\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_211\classes"/><property name="java.vendor" value="Oracle Corporation"/><property name="sun.stderr.encoding" value="ms932"/><property name="file.separator" value="\"/><property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/><property name="sun.io.unicode.encoding" value="UnicodeLittle"/><property name="sun.cpu.endian" value="little"/><property name="sun.stdout.encoding" value="ms932"/><property name="sun.desktop" value="windows"/><property name="sun.cpu.isalist" value="amd64"/>
     </properties>
-                     <testcase classname="ParserNonscalaTest" name="* should 左に強く結合" time="0.122">
+                     <testcase classname="ParserNonscalaTest" name="* should 左に強く結合" time="0.214">
                                                  
-                                               </testcase><testcase classname="ParserNonscalaTest" name="カッコ should 正しく結合" time="0.015">
+                                               </testcase><testcase classname="ParserNonscalaTest" name="カッコ should 正しく結合" time="0.013">
                                                  
-                                               </testcase><testcase classname="ParserNonscalaTest" name="*と+ should *の方が強く結合" time="0.082">
+                                               </testcase><testcase classname="ParserNonscalaTest" name="*と+ should *の方が強く結合" time="0.079">
                                                  <failure message="VarExp(abc) did not equal BOpExp(PlusOp,VarExp(abc),BOpExp(TimesOp,IntExp(10),IntExp(20)))" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: VarExp(abc) did not equal BOpExp(PlusOp,VarExp(abc),BOpExp(TimesOp,IntExp(10),IntExp(20)))
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:528)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:527)
@@ -76,7 +76,7 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </failure>
-                                               </testcase><testcase classname="ParserNonscalaTest" name="カッコの中に*と+ should" time="0.004">
+                                               </testcase><testcase classname="ParserNonscalaTest" name="カッコの中に*と+ should" time="0.02">
                                                  <failure type="Base$MyError">Base$MyError
 	at Base$.error(Base.scala:3)
 	at ParserNonscala.eat(ParserNonscala.scala:14)
@@ -148,7 +148,7 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </failure>
-                                               </testcase><testcase classname="ParserNonscalaTest" name=":: should 右に強く結合" time="0.021">
+                                               </testcase><testcase classname="ParserNonscalaTest" name=":: should 右に強く結合" time="0.011">
                                                  <failure message="IntExp(10) did not equal BOpExp(ConsOp,IntExp(10),BOpExp(ConsOp,IntExp(20),NilExp))" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: IntExp(10) did not equal BOpExp(ConsOp,IntExp(10),BOpExp(ConsOp,IntExp(20),NilExp))
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:528)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:527)
@@ -216,7 +216,7 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </failure>
-                                               </testcase><testcase classname="ParserNonscalaTest" name="::と* should *の方が強く結合" time="0.004">
+                                               </testcase><testcase classname="ParserNonscalaTest" name="::と* should *の方が強く結合" time="0.003">
                                                  <failure message="IntExp(5) did not equal BOpExp(ConsOp,IntExp(5),BOpExp(ConsOp,BOpExp(TimesOp,IntExp(10),IntExp(20)),NilExp))" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: IntExp(5) did not equal BOpExp(ConsOp,IntExp(5),BOpExp(ConsOp,BOpExp(TimesOp,IntExp(10),IntExp(20)),NilExp))
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:528)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:527)
@@ -284,7 +284,7 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </failure>
-                                               </testcase><testcase classname="ParserNonscalaTest" name="if文と== should" time="0.003">
+                                               </testcase><testcase classname="ParserNonscalaTest" name="if文と== should" time="0.002">
                                                  <failure type="Base$MyError">Base$MyError
 	at Base$.error(Base.scala:3)
 	at ParserNonscala.T(ParserNonscala.scala:35)
@@ -354,7 +354,7 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </failure>
-                                               </testcase><testcase classname="ParserNonscalaTest" name="if文と&lt; should" time="0.003">
+                                               </testcase><testcase classname="ParserNonscalaTest" name="if文と&lt; should" time="0.002">
                                                  <failure type="Base$MyError">Base$MyError
 	at Base$.error(Base.scala:3)
 	at ParserNonscala.T(ParserNonscala.scala:35)
@@ -424,7 +424,7 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </failure>
-                                               </testcase><testcase classname="ParserNonscalaTest" name="if文のネスト should" time="0.002">
+                                               </testcase><testcase classname="ParserNonscalaTest" name="if文のネスト should" time="0.008">
                                                  <failure type="Base$MyError">Base$MyError
 	at Base$.error(Base.scala:3)
 	at ParserNonscala.T(ParserNonscala.scala:35)
@@ -565,7 +565,7 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </failure>
-                                               </testcase><testcase classname="ParserNonscalaTest" name="isEmpty should" time="0.002">
+                                               </testcase><testcase classname="ParserNonscalaTest" name="isEmpty should" time="0.012">
                                                  <failure type="Base$MyError">Base$MyError
 	at Base$.error(Base.scala:3)
 	at ParserNonscala.Tprime(ParserNonscala.scala:44)
@@ -636,7 +636,7 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </failure>
-                                               </testcase><testcase classname="ParserNonscalaTest" name="head should" time="0.003">
+                                               </testcase><testcase classname="ParserNonscalaTest" name="head should" time="0.002">
                                                  <failure type="Base$MyError">Base$MyError
 	at Base$.error(Base.scala:3)
 	at ParserNonscala.Tprime(ParserNonscala.scala:44)
@@ -707,7 +707,7 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </failure>
-                                               </testcase><testcase classname="ParserNonscalaTest" name="tail should" time="0.002">
+                                               </testcase><testcase classname="ParserNonscalaTest" name="tail should" time="0.001">
                                                  <failure type="Base$MyError">Base$MyError
 	at Base$.error(Base.scala:3)
 	at ParserNonscala.Tprime(ParserNonscala.scala:44)
@@ -778,7 +778,7 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </failure>
-                                               </testcase><testcase classname="ParserNonscalaTest" name="関数定義 should" time="0.005">
+                                               </testcase><testcase classname="ParserNonscalaTest" name="関数定義 should" time="0.009">
                                                  <failure type="Base$MyError">Base$MyError
 	at Base$.error(Base.scala:3)
 	at ParserNonscala.D(ParserNonscala.scala:55)
@@ -845,7 +845,7 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </failure>
-                                               </testcase><testcase classname="ParserNonscalaTest" name="例: insert should" time="0.052">
+                                               </testcase><testcase classname="ParserNonscalaTest" name="例: insert should" time="0.006">
                                                  <failure type="Base$MyError">Base$MyError
 	at Base$.error(Base.scala:3)
 	at ParserNonscala.D(ParserNonscala.scala:55)
