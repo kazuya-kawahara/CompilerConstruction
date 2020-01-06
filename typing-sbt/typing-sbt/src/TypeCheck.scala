@@ -30,11 +30,19 @@ object TypeCheck {
           case _ => typeError("UOpExp")
         }
       }
-/*      case AppExp(f, es) => {
+      case IntExp(i) =>
+        env.get(i) match {
+          case Some(i) => i
+          case None => typeError(s"Cannot find integer: $i")
+        }
+      case NilExp => {}
+      case BOpExp => {}
+      case IfExp => {}
+      case AppExp(f, es) => {
         val FuncTy(ts,t) = fenv(f)
         ... 
         // Listのmapを使うと簡単            
-      }  */
+      }
 
     }
 
