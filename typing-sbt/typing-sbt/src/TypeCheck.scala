@@ -22,22 +22,42 @@ object TypeCheck {
           case None => typeError(s"Cannot find variable: $x")
         }
       case UOpExp(o, e1) => {
-        val t1 = tcheck (fenv, env, e1)
-          (o, t1) match {
+        val t1 = tcheck(fenv, env, e1)
+        (o, t1) match {
           case (IsEmptyOp, IntListTy) => BoolTy
           case (HeadOp, IntListTy) => IntTy
           case (TailOp, IntListTy) => IntListTy
           case _ => typeError("UOpExp")
         }
       }
+      //以下追加
       case IntExp(i) =>
         env.get(i) match {
           case Some(i) => i
           case None => typeError(s"Cannot find integer: $i")
         }
-      case NilExp => {}
-      case BOpExp => {}
-      case IfExp => {}
+      case NilExp => {
+        IntListTy
+      }
+      case BOpExp(o, e1, e2) => {
+        val t1 = tcheck(fenv, env, e1)
+        val t2 = tcheck(fenv, env, e2)
+        (o, t1, t2) match {
+          case (PlusOp, IntTy, IntTy)|(MinusOp, IntTy, IntTy)|(TimesOp, IntTy, IntTy)|(DivideOp, IntTy, IntTy) => IntTy
+          case (EqOp, IntTy, IntTy)|(LtOp, IntTy, IntTy) => BoolTy
+          case (ConsOp, IntTy, IntListTy) => IntListTy
+          case _ => typeError("BOpExp")
+        }
+      }
+      //以下未完
+      case IfExp(e, e1, e2) => {
+        val t = tcheck(fenv, env, e)
+        val t1 = tcheck(fenv, env, e1)
+        val t2 = tcheck(fenv, env, e2)
+        (t, t1, t2) match {
+          case (BoolTy, Prog, Prog)
+        }
+      }
       case AppExp(f, es) => {
         val FuncTy(ts,t) = fenv(f)
         ... 
