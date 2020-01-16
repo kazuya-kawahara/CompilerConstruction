@@ -64,6 +64,7 @@ object Eval {
         val vs = es.map(eval(fenv, env, _))
         eval(fenv, xs.zip(vs).toMap, body)
       }
+      // 以上修正
     }
 
   def defs2env (ds: List[Def]): Map[Var, FValue] =
