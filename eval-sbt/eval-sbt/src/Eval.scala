@@ -35,10 +35,33 @@ object Eval {
           case _ => error("impossible if the program is well-typed")
         }
       }
+      // 以下修正
+      case VarExp(x) => env(x)
+      case BOpExp(o, e1, e2) => {
+        val v1 = eval (fenv, env, e1)
+        val v2 = eval (fenv, env, e2)
+        (o, v1, v2) match {
+          case (PlusOp, IntVal(i1), IntVal(i2)) => IntVal(i1+i2)
+          case (MinusOp, IntVal(i1), IntVal(i2)) => IntVal(i1-i2)
+          case (TimesOp, IntVal(i1), IntVal(i2)) => IntVal(i1*i2)
+          case (DivideOp, IntVal(i1), IntVal(i2)) => IntVal(i1/i2)
+          case (EqOp, IntVal(i1), IntVal(i2)) => BoolVal(i1==i2)
+          case (LtOp, IntVal(i1), IntVal(i2)) => BoolVal(i1<i2)
+          case (ConsOp, IntVal(i), ListVal(rst)) => ListVal(i::rst)
+          case _ => error("impossible if the program is well-typed")
+        }
+      }
+      case IfExp(e, e1, e2) => {
+        val v = eval (fenv, env, e)
+        v match {
+          case BoolVal(true) => eval (fenv, env, e1)
+          case BoolVal(false) => eval (fenv, env, e2)
+          case _ => error("impossible if the program is well-typed")
+        }
+      }
       case AppExp(f, es) => {
         val FValue(xs,body) = fenv(f)
-        val vs = Nil // Nil を正しいプログラムに置き換える必要がある
-                     // map を使うと簡単
+        val vs = es.map(eval(fenv, env, _))
         eval(fenv, xs.zip(vs).toMap, body)
       }
     }

@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Documents\CompilerConstruction\eval-sbt\eval-sbt\src\Eval.scala:64:29: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : nonscala.Abssyn.Exp[0m
+[0m[[0m[31merror[0m] [0m[0m required: nonscala.Base.Var[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  String[0m
+[0m[[0m[31merror[0m] [0m[0m        val vs = es.map(env(_))[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

@@ -1,0 +1,15 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mEvalTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m変数[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should 正しい値[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m+[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should 正しい値[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32misEmpty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should 正しい値[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m関数適用[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should 正しい値[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m例: sort[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should 正しい値[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m例: qsort[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should 正しい値[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m例: primes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should 正しい値[0m[0m
