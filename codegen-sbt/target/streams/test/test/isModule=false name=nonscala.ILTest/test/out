@@ -1,0 +1,91 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mILTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m変数[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should 正しい値[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m+[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should 正しい値[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m算術式[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should 正しい値[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m関数適用[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should 正しい値 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  nonscala.Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.Base$.error(Base.scala:5)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.trans(IL.scala:67)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.ILTest.$anonfun$new$4(IL.scala:41)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FlatSpecLike$$anon$1.apply(FlatSpecLike.scala:1682)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m例: arith (x-y) * z[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should 正しい値 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  nonscala.Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.Base$.error(Base.scala:5)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.trans(IL.scala:67)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.ILTest.$anonfun$new$5(IL.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FlatSpecLike$$anon$1.apply(FlatSpecLike.scala:1682)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m例: fact[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should 正しい値 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  nonscala.Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.Base$.error(Base.scala:5)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.trans(IL.scala:67)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.trans(IL.scala:43)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.trans(IL.scala:59)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.transDef(IL.scala:93)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.Test$.$anonfun$transFileDefs$1(Test.scala:19)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.List.map(List.scala:286)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.Test$.transFileDefs(Test.scala:19)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.ILTest.$anonfun$new$6(IL.scala:55)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m例: sort[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should 正しい値 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  nonscala.Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.Base$.error(Base.scala:5)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.trans(IL.scala:67)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.trans(IL.scala:43)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.trans(IL.scala:59)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.trans(IL.scala:59)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.transDef(IL.scala:93)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.Test$.$anonfun$transFileDefs$1(Test.scala:19)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.List.map(List.scala:286)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.Test$.transFileDefs(Test.scala:19)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.ILTest.$anonfun$new$7(IL.scala:64)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m例: qsort[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should 正しい値 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  nonscala.Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.Base$.error(Base.scala:5)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.trans(IL.scala:67)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.trans(IL.scala:43)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.trans(IL.scala:59)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.transDef(IL.scala:93)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.Test$.$anonfun$transFileDefs$1(Test.scala:19)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.List.map(List.scala:286)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.Test$.transFileDefs(Test.scala:19)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.ILTest.$anonfun$new$8(IL.scala:73)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m例: primes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should 正しい値 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  nonscala.Base$MyError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.Base$.error(Base.scala:5)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.trans(IL.scala:67)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.trans(IL.scala:43)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.trans(IL.scala:59)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.IL$.transDef(IL.scala:93)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.Test$.$anonfun$transFileDefs$1(Test.scala:19)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.List.map(List.scala:290)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.Test$.transFileDefs(Test.scala:19)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at nonscala.ILTest.$anonfun$new$9(IL.scala:82)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m

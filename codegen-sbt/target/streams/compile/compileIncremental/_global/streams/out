@@ -1,0 +1,39 @@
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/is-home/kawahara.k.ad/Documents/CompilerConstruction/codegen-sbt/src/IL.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(nonscala.IL, nonscala.IL.CallExp, nonscala.IL.IntVal, nonscala.IL.ValExp, nonscala.IL.UOpExp, nonscala.IL.Def, nonscala.IL.GotoInstr, nonscala.IL.Exp, nonscala.IL.Val, nonscala.IL.VarVal, nonscala.IL.IsEmptyCExp, nonscala.IL.CExp, nonscala.IL.BOpExp, nonscala.IL.NilVal, nonscala.IL.LtCExp, nonscala.IL.Instr, nonscala.IL.EqCExp, nonscala.IL.IfGotoInstr, nonscala.IL.AssignInstr, nonscala.IL.LabelInstr)[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(nonscala.IL, nonscala.IL.CallExp, nonscala.IL.IntVal, nonscala.IL.ValExp, nonscala.IL.UOpExp, nonscala.IL.Def, nonscala.IL.GotoInstr, nonscala.IL.Exp, nonscala.IL.Val, nonscala.IL.VarVal, nonscala.IL.IsEmptyCExp, nonscala.IL.CExp, nonscala.IL.BOpExp, nonscala.IL.NilVal, nonscala.IL.LtCExp, nonscala.IL.Instr, nonscala.IL.EqCExp, nonscala.IL.IfGotoInstr, nonscala.IL.AssignInstr, nonscala.IL.LabelInstr)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/is-home/kawahara.k.ad/Documents/CompilerConstruction/codegen-sbt/src/IL.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: nonscala.IL, nonscala.IL.CallExp, nonscala.IL.IntVal, nonscala.IL.ValExp, nonscala.IL.UOpExp, nonscala.IL.Def, nonscala.IL.GotoInstr, nonscala.IL.Exp, nonscala.IL.Val, nonscala.IL.VarVal, nonscala.IL.IsEmptyCExp, nonscala.IL.CExp, nonscala.IL.BOpExp, nonscala.IL.NilVal, nonscala.IL.LtCExp, nonscala.IL.Instr, nonscala.IL.EqCExp, nonscala.IL.IfGotoInstr, nonscala.IL.AssignInstr, nonscala.IL.LabelInstr[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding nonscala.IL.BOpExp by nonscala.IL.Exp[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding nonscala.IL.VarVal by nonscala.IL.Val[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding nonscala.IL.NilVal by nonscala.IL.Val[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding nonscala.IL.LtCExp by nonscala.IL.CExp[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding nonscala.IL.EqCExp by nonscala.IL.CExp[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding nonscala.IL.IfGotoInstr by nonscala.IL.Instr[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding nonscala.IL.AssignInstr by nonscala.IL.Instr[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding nonscala.IL.LabelInstr by nonscala.IL.Instr[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /is-home/kawahara.k.ad/Documents/CompilerConstruction/codegen-sbt/target/scala-2.12/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.3.1:compile for Scala 2.12.10[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.3.1:compile for Scala 2.12.10[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler dd36e98 for Scala compiler version 2.12.10[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-feature[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-unchecked[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-deprecation[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/classes:/is-home/kawahara.k.ad/.sbt/boot/scala-2.12.10/lib/scala-library.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/is-home/kawahara.k.ad/Documents/CompilerConstruction/codegen-sbt/target/scala-2.12/classes:/is-home/kawahara.k.ad/Documents/CompilerConstruction/codegen-sbt/lib/parsing-nonscala-sbt_2.12-0.1-SNAPSHOT.jar:/is-home/kawahara.k.ad/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar:/is-home/kawahara.k.ad/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.4/scalactic_2.12-3.0.4.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mCompilation failed (CompilerInterface)[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
